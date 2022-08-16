@@ -1,5 +1,8 @@
+import java.util.Locale;
+
 public class Program {
     public static void main(String[] args) {
+        Locale.setDefault(new Locale("pt", "BR"));
         Director director = new Director();
 
         GuerreiroBuilder guerreiroBuilder = new GuerreiroBuilder();
@@ -33,3 +36,4 @@ public class Program {
         }
     }
 }
+
