@@ -1,18 +1,19 @@
 public class NaveEspacialDecorator extends NaveEspacial{
-    private NaveEspacial nave;
+    private NaveEspacial naveDecorada;
 
     public NaveEspacialDecorator(NaveEspacial naveEspacial) {
         super(naveEspacial.getSaude(), naveEspacial.getAtaque());
-        this.nave = naveEspacial;
+        this.naveDecorada = naveEspacial;
     }
 
     @Override
     public int getSaude() {
-        return nave.getSaude();
+        return naveDecorada.getSaude();
     }
 
     @Override
     public int getAtaque() {
-        return nave.getAtaque();
+        return naveDecorada.getAtaque();
     }
 }
+
